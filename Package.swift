@@ -2,8 +2,8 @@
 
 import PackageDescription
 
-let sdkVersion = "3.0.792"
-let sdkChecksum = "728a05d4ca776d723b2d244bb24bd7d288df54151f1a22f3f622381857463438"
+let sdkVersion = "3.0.798"
+let sdkChecksum = "1cbd6e5aed1bfa5fbb0e314ff2423bdcd26cb8d089025fa0ee769a5ac17f093e"
 
 let package = Package(
     name: "FaceSDK",
