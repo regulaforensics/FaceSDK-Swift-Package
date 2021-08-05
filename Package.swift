@@ -2,8 +2,8 @@
 
 import PackageDescription
 
-let faceSDKVersion = "3.0.792"
-let faceSDKChecksum = "728a05d4ca776d723b2d244bb24bd7d288df54151f1a22f3f622381857463438"
+let sdkVersion = "3.0.792"
+let sdkChecksum = "728a05d4ca776d723b2d244bb24bd7d288df54151f1a22f3f622381857463438"
 
 let package = Package(
     name: "FaceSDK",
@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FaceSDK",
-            url: "https://pods.regulaforensics.com/FaceSDK/\(faceSDKVersion)/FaceSDK-\(faceSDKVersion).zip",
-            checksum: faceSDKChecksum
+            url: "https://pods.regulaforensics.com/FaceSDK/\(sdkVersion)/FaceSDK-\(sdkVersion).zip",
+            checksum: sdkChecksum
         )
     ]
 )
