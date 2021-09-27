@@ -16,14 +16,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "FaceSDKBinary",
+            name: "FaceSDK",
             url: "https://pods.regulaforensics.com/FaceSDK/\(sdkVersion)/FaceSDK-\(sdkVersion).zip",
             checksum: sdkChecksum
         ),
         .target(
             name: "FaceSDKDeps",
             dependencies: [
-                .target(name: "FaceSDKBinary"),
+                .target(name: "FaceSDK"),
                 .product(name: "RegulaCommon", package: "RegulaCommon")
             ],
             path: "Sources",
