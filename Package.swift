@@ -9,21 +9,21 @@ let package = Package(
     name: "FaceSDK",
     platforms: [.iOS(.v9)],
     products: [
-        .library(name: "FaceSDK", targets: ["FaceSDKTarget"])
+        .library(name: "FaceSDK", targets: ["FaceSDKDeps"])
     ],
     dependencies: [
         .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package", .exact(Version(stringLiteral: commonSDKVersion))),
     ],
     targets: [
         .binaryTarget(
-            name: "FaceSDK",
+            name: "FaceSDKBinary",
             url: "https://pods.regulaforensics.com/FaceSDK/\(sdkVersion)/FaceSDK-\(sdkVersion).zip",
             checksum: sdkChecksum
         ),
         .target(
-            name: "FaceSDKTarget",
+            name: "FaceSDKDeps",
             dependencies: [
-                .target(name: "FaceSDK"),
+                .target(name: "FaceSDKBinary"),
                 .product(name: "RegulaCommon", package: "RegulaCommon")
             ],
             path: "Sources",
