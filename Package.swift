@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "FaceSDK", targets: ["FaceSDKTarget"])
     ],
     dependencies: [
-        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package", .exact(commonSDKVersion)),
+        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package", .exact(Version(stringLiteral: commonSDKVersion))),
     ],
     targets: [
         .binaryTarget(
