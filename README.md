@@ -4,7 +4,7 @@ We’re proud to offer our [Regula Face SDK](https://mobile.regulaforensics.com/
 
 ## Quick Start
 
-To get started with Face SDK, please visit our [Quickstart](https://docs.regulaforensics.com/face-sdk/getting-started/quickstart) guide and our [Documentation](https://docs.regulaforensics.com/face-sdk/).
+To get started with Face SDK, please visit our [Documentation](https://docs.regulaforensics.com/develop/face-sdk/mobile?utm_source=github).
 
 ## Support
 
