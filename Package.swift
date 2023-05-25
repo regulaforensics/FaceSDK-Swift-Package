@@ -1,9 +1,9 @@
 // swift-tools-version:5.3
 import PackageDescription
 
-let commonSDKVersion = "6.3.119"
-let sdkVersion = "3.2.1092"
-let sdkChecksum = "64b06ef2eef790c4ea0297e500dd0b4a8f0880a1fc6b6ed3f1240cbb16a16de7"
+let commonSDKVersion = "6.8.324"
+let sdkVersion = "5.1.1466"
+let sdkChecksum = "3380d9a19b81512f4dacacb1fd91d26d687c2ac34f8594fcd499559306d3f257"
 
 let package = Package(
     name: "FaceSDK",
