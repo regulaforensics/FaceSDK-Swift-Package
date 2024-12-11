@@ -15,7 +15,7 @@ let package = Package(
         .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git", .exact(Version(stringLiteral: "7.4.795"))),
     ],
     targets: [
-        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/FaceSDK/6.3.2181/FaceSDK-6.3.2181.zip", checksum: "38afd2f39c02d158bd129e97cb18d1195f1055046cd919203ad7a63bd6a9859d"),
+        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/FaceSDK/6.4.2287/FaceSDK-6.4.2287.zip", checksum: "c309bb48b134ae5e3d1f0f6d72e17c8ff9e01a185c63a297c88fc34f4fb4ad7b"),
         .target(
             name: "\(packageName)Common",
             dependencies: [
