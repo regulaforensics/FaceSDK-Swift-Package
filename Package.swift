@@ -5,17 +5,17 @@ let packageName = "FaceSDK"
 
 let package = Package(
     name: "FaceSDK",
-    platforms: [.iOS(.v11)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "FaceSDK",
             targets: ["\(packageName)Common"]),
     ],
     dependencies: [
-        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git", .exact(Version(stringLiteral: "7.7.1110"))),
+        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git", .exact(Version(stringLiteral: "8.1.1294"))),
     ],
     targets: [
-        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/FaceSDK/6.4.2494/FaceSDK-6.4.2494.zip", checksum: "2768acfaa0058ceb2b45c68c144c0a7d1d22d8a1b419ef00fa6fabfba07e5736"),
+        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/FaceSDK/7.1.2790/FaceSDK-7.1.2790.zip", checksum: "2130d69b08ad6654d5101555d9a7e5c5655d42caa53af940bc9c64044cd98aa2"),
         .target(
             name: "\(packageName)Common",
             dependencies: [
