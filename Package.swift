@@ -1,15 +1,29 @@
 // swift-tools-version:5.3
 import PackageDescription
 
+let packageName = "FaceSDK"
+
 let package = Package(
     name: "FaceSDK",
     platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "FaceSDK",
-            targets: ["FaceSDKNightly"]),
+            targets: ["\(packageName)Common"]),
+    ],
+    dependencies: [
+        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git", .exact(Version(stringLiteral: "9.7.2528-nightly"))),
     ],
     targets: [
-        .binaryTarget(name: "FaceSDKNightly", url: "https://pods.regulaforensics.com/Nightly/FaceSDKNightly/8.3.4590/FaceSDKNightly-8.3.4590.zip", checksum: "356aaf19981582d8b6902aa3fcf7b7860d2788fb2b1a61bea5aec805197ff5ee"),
+        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/Nightly/FaceSDKNightly/8.3.4596/FaceSDKNightly-8.3.4596.zip", checksum: "a4b600508b66560060d0a8abed00512fc773f8e6ca769701d1d8016ae7dee9bd"),
+        .target(
+            name: "\(packageName)Common",
+            dependencies: [
+                .target(name: "FaceSDK"),
+                .product(name: "RegulaCommon", package: "RegulaCommon")
+            ],
+            path: "Sources",
+            sources: ["dummy.swift"]
+        )
     ]
 )
