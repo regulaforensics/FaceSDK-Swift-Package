@@ -12,10 +12,10 @@ let package = Package(
             targets: ["\(packageName)Common"]),
     ],
     dependencies: [
-        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git", .exact(Version(stringLiteral: "9.7.2626"))),
+        .package(name: "RegulaCommon", url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git", .exact(Version(stringLiteral: "9.8.2700-rc"))),
     ],
     targets: [
-        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/FaceSDK/8.3.4795/FaceSDK-8.3.4795.zip", checksum: "838db4ded6d8d4cff6b104e0befec6135898a05666e6c9174f3a3a5fff631a15"),
+        .binaryTarget(name: "FaceSDK", url: "https://pods.regulaforensics.com/Stage/FaceSDKStage/8.3.4798/FaceSDKStage-8.3.4798.zip", checksum: "2d6ac77452249d57a62b63ba1d129428dcdaccc4009e71397f226b0b11133df5"),
         .target(
             name: "\(packageName)Common",
             dependencies: [
