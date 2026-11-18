@@ -20,8 +20,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "FaceSDK",
-            url: "https://pods.regulaforensics.com/Stage/FaceSDKStage/8.4.5296/FaceSDKStage-8.4.5296.zip",
-            checksum: "08ad63b9259e3433b0ba52b2a6f971b4ba310ef666fa29ca0e9e0e28a50b51f2"),
+            url: "https://pods.regulaforensics.com/Stage/FaceSDKStage/8.5.5297/FaceSDKStage-8.5.5297.zip",
+            checksum: "5c23548683a4450da89c845fa856f30b9affe632b638719483debb2833215cbc"),
         .target(
             name: "\(packageName)Common",
             dependencies: [
