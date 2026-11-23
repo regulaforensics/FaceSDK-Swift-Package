@@ -15,13 +15,13 @@ let package = Package(
         .package(
             name: "RegulaCommon",
             url: "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git",
-            .exact("9.10.3062-rc")),
+            .exact("9.11.3064-nightly")),
     ],
     targets: [
         .binaryTarget(
             name: "FaceSDK",
-            url: "https://pods.regulaforensics.com/Stage/FaceSDKStage/8.4.5339/FaceSDKStage-8.4.5339.zip",
-            checksum: "34c922366ecd7be7795627d20340d7e59a3a8f5712ef54bdab335acb80b995bf"),
+            url: "https://pods.regulaforensics.com/Nightly/FaceSDKNightly/8.4.5342/FaceSDKNightly-8.4.5342.zip",
+            checksum: "acc69343de27483c0b4582c48859350c1f1b8b7f6823b31ce05851838b87b97f"),
         .target(
             name: "\(packageName)Common",
             dependencies: [
